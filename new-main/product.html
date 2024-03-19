@@ -1,0 +1,333 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>產品列表</title>
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Noto Serif TC", serif;
+    }
+
+    header {
+      padding: 0px;
+      background-color: lightgray;
+      display: block;
+    }
+
+    h1 {
+      width: 40%;
+      line-height: 45px;
+      /* text-align: center; */
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .wrap {
+      margin: auto;
+      width: 80%;
+      max-width: 1170px;
+    }
+
+    .container {
+      /* width: 80%; */
+      /* max-width: 1170px;
+      /* 最大寬度 */
+      margin: auto;
+      line-height: 10px;
+      /* 外邊界:自動 */
+    }
+
+    /* ::before */
+    .container::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .container li a {
+      text-decoration: none;
+      color: #7b5656;
+    }
+
+    footer {
+      left: 0;
+      bottom: 0;
+      padding: 50px 0;
+      width: 100%;
+      background-color: beige;
+      float: left;
+    }
+
+    footer p {
+      width: 80%;
+      color: #6f4444;
+      margin-left: 23%;
+    }
+
+    nav {
+      width: 60%;
+    }
+
+    nav>ul {
+      margin: 0;
+      list-style-type: none;
+    }
+
+    nav>ul>li {
+      float: left;
+      width: 15%;
+    }
+
+    nav>ul>li>a {
+      display: block;
+      line-height: 88px;
+      text-align: center;
+      text-decoration: none;
+      color: #7b5656;
+      font-size: 18px;
+    }
+
+    nav>ul>li>a:hover {
+      color: #bb9f9f;
+    }
+
+    .bgc {
+      background-color: beige;
+      padding: 5px;
+    }
+
+    .bread ol {
+      margin-left: 10%;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    .bread ol li {
+      float: left;
+      margin-bottom: 15px;
+    }
+
+
+    .bread a {
+      color: rgb(105, 80, 50);
+      text-decoration: none;
+    }
+
+    .bread a:hover {
+      color: lightgray;
+    }
+
+    .bread ol li+li::before {
+      content: "\00a0 > \00a0";
+    }
+
+    body {
+      /* display: flex; */
+      margin: 0;
+      /* overflow-y: scroll; */
+      font-family: "Noto Serif TC", serif;
+    }
+
+    .product {
+      width: 25%;
+      /* background-color: lightseagreen; */
+      /* border:1px solid black; */
+      padding: 20px;
+    }
+
+    @media (max-width:767px) {
+      .product {
+        width: 100%;
+      }
+    }
+
+    .float-left {
+      float: left;
+    }
+
+
+    .float-left a {
+
+      text-decoration: none;
+      color: #7b5656;
+      padding-left: 45%;
+    }
+
+
+    .float-left p {
+text-align: center;
+    }
+
+    .w-100 {
+      width: 100%;
+    }
+
+    .social-icon {
+      
+      margin-bottom: 15px;
+    }
+
+    .social-icon a {
+      font-size: 24px;
+      margin-right: 10px;
+    }
+
+    .social-icon a:hover {
+      color: bisque;
+    }
+
+    .icon-fb {
+      color: #4267b2;
+    }
+
+    .icon-ig {
+      color: #e1306c;
+    }
+
+    .icon-yt {
+      color: #ff0000;
+    }
+
+    .icon-line {
+      color: #06c755;
+    }
+
+    .position-relative {
+      position: relative;
+    }
+
+    .position-absolute {
+      position: absolute;
+    }
+
+    .tag {
+      background-color: #06c755;
+      right: 0px;
+      top: 0px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 50px;
+      color: aliceblue;
+    }
+  </style>
+</head>
+
+<!-- header{頁首}+.container{內容}+footer{頁尾} -->
+
+<body class="container">
+  <header>
+    <div class="container">
+      <h1 class="float-left"><a href="hone.html">PiKaPi</a></h1>
+      <nav class="float-left">
+        <ul>
+          <li><a href="about.html">關於我們</a></li>
+          <li><a href="product.html">產品列表</a></li>
+          <li><a href="store.html">門市資訊</a></li>
+          <li><a href="contact.html">聯絡我們</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- 麵包屑 -->
+  <div class="bgc bread">
+    <div class="container">
+      <ol>
+
+        <li><a href="hone.html">首頁</a></li>
+        <li>聯絡我們</li>
+      </ol>
+    </div>
+  </div>
+  <div class="wrap">
+    <h2>產品列表</h2>
+    <!-- .float-left.product*15>img.w-100[src="https://placehold.co/600x400"]+p{商品$} -->
+    <div class="float-left product">
+      <img src="/images/產品1.jpg" alt="" class="w-100" />
+      <p>商品1</p>
+    </div>
+    <div class="float-left product">
+      <div class="position-relative">
+        <img src="/images/產品2.jpg" alt="" class="w-100" />
+        <p>商品2</p>
+        <div class="tag position-absolute">new</div>
+      </div>
+    </div>
+    <div class="float-left product">
+      <img src="/images/產品3.jpg" alt="" class="w-100" />
+      <p>商品3</p>
+    </div>
+    <div class="float-left product">
+      <img src="/images/產品4.jpg" alt="" class="w-100" />
+      <p>商品4</p>
+    </div>
+    <div class="float-left product">
+      <img src="/images/產品5.jpg" alt="" class="w-100" />
+      <p>商品5</p>
+    </div>
+    <div class="float-left product">
+      <img src="/images/產品6.jpg" alt="" class="w-100" />
+      <p>商品6</p>
+    </div>
+    <div class="float-left product">
+      <img src="/images/產品3.jpg" alt="" class="w-100" />
+      <p>商品7</p>
+    </div>
+    <div class="float-left product">
+      <img src="/images/產品6.jpg" alt="" class="w-100" />
+      <p>商品8</p>
+    </div>
+    <div class="float-left product">
+      <img src="/images/產品1.jpg" alt="" class="w-100" />
+      <p>商品9</p>
+    </div>
+    <div class="float-left product">
+      <img src="/images/產品5.jpg" alt="" class="w-100" />
+      <p>商品10</p>
+    </div>
+    <div class="float-left product">
+      <img src="/images/產品2.jpg" alt="" class="w-100" />
+      <p>商品11</p>
+    </div>
+    <div class="float-left product">
+      <img src="/images/產品5.jpg" alt="" class="w-100" />
+      <p>商品12</p>
+    </div>
+    <div class="float-left product">
+      <img src="/images/產品6.jpg" alt="" class="w-100" />
+      <p>商品13</p>
+    </div>
+    <div class="float-left product">
+      <img src="/images/產品4.jpg" alt="" class="w-100" />
+      <p>商品14</p>
+    </div>
+    <div class="float-left product">
+      <img src="/images/產品3.jpg" alt="" class="w-100" />
+      <p>商品15</p>
+    </div>
+  </div>
+  
+  <footer><div class="social-icon">
+    <a class="icon-fb" href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a class="icon-ig" href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a class="icon-yt" href="#"><i class="fa-brands fa-youtube"></i></a>
+    <a class="icon-line" href="#"><i class="fa-brands fa-line"></i></a>
+  </div></footer>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+.slideshow-container {
+    max-width: 800px; /* 设置轮播容器的最大宽度 */
+    position: relative; /* 设置相对定位，以便轮播按钮能够定位于其上 */
+    margin: auto; /* 居中显示 */
+  }
+  
+  /* 轮播图片样式 */
+  .slide {
+    display: none; /* 默认隐藏所有轮播图片 */
+  }
+  
+  /* 设置第一张图片显示 */
+  .slide:first-child {
+    display: block;
+  }
+  
+  /* 上一张/下一张按钮样式 */
+  .prev, .next {
+    cursor: pointer; /* 设置鼠标悬停样式为手型 */
+    position: absolute; /* 设置绝对定位，以便定位于轮播容器上 */
+    top: 50%; /* 设置按钮位置为轮播容器的中间 */
+    transform: translateY(-50%); /* 垂直居中 */
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white; /* 设置按钮文字颜色为白色 */
+    font-weight: bold; /* 设置按钮文字加粗 */
+    font-size: 18px; /* 设置按钮文字大小 */
+    transition: 0.6s ease; /* 添加过渡效果 */
+    border-radius: 0 3px 3px 0; /* 设置圆角 */
+  } 
+  .prev {transform: rotate(45deg);}
+  
+  
+  /* 右侧按钮样式 */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px; /* 设置圆角 */
+  }
+  
+  /* 当鼠标悬停在按钮上时改变背景颜色 */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8); /* 设置背景颜色 */
+  }
+  
+  /* 当鼠标悬停在按钮上时改变背景颜色 */
+  .prev:hover {
+    left: 0; /* 将左侧按钮向左移动以显示完整按钮 */
+  }
+  
+  /* 当鼠标悬停在按钮上时改变背景颜色 */
+  .next:hover {
+    right: 0; /* 将右侧按钮向右移动以显示完整按钮 */
+  }
+  
+  /* 轮播标题样式（可选） */
+  .slide-caption {
+    position: absolute; /* 设置绝对定位，以便定位于轮播容器上 */
+    bottom: 0; /* 轮播容器底部 */
+    left: 0; /* 轮播容器左侧 */
+    width: 100%; /* 宽度100% */
+    background-color: rgba(0, 0, 0, 0.5); /* 背景颜色 */
+    color: white; /* 字体颜色 */
+    padding: 10px; /* 内边距 */
+  }
